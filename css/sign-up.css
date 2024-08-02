@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #4F4F4F;
+    font-family: "Poppins", "Arial", sans-serif;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    user-select: none;
+    -moz-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.visually-hidden {
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.container {
+    display: flex;
+    max-width: 800px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    padding: 20px 20px 40px 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container-top {
+    display: flex;
+    padding-top: 8px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.sign-in-link {
+    font-weight: 600;
+    font-size: 24px;
+    color: #4F4F4F;
+    margin-right: 78.5px;
+}
+
+.sign-up-link {
+    font-weight: 600;
+    font-size: 24px;
+    color: #5957BA;
+    /* font-size: 48px; */
+    font-weight: bold;
+    color: #5f5fc4;
+    position: relative;
+}
+
+.sign-up-link::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, rgba(95, 95, 196, 0) 0%, rgba(95, 95, 196, 0.8) 50%, rgba(95, 95, 196, 0) 100%);
+}
+
+.container-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-left {
+    display: flex;
+    padding-right: 80px;
+    border-right: 0.5px solid #C0C6C9;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container-right {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    justify-content: center;
+}
+
+.inputs-label {
+    color: #4f4f4f;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.inputs {
+    width: 297px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 0.5px solid #C0C6C9;
+}
+
+.inputs:focus {
+    outline: 0;
+    background-color: #E4F0FF;
+    border: 0.1px solid #007AFF;
+}
+
+.sign-up-btn {
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 8px 123px;
+    background-color: #4F4F4F;
+    font-family: "Poppins", sans-serif;
+}
+
+.error-input {
+    background-color: #FFEFEF;
+    border: 1px solid #FF3D00;
+}
+
+.error-text {
+    opacity: 0;
+    width: 297px;
+    color: #FF3D00;
+    margin-bottom: 15px;
+}
+
+.error-text:nth-child(3) {
+    font-size: 13px;
+}
+
+.error-text:nth-child(4) {
+    font-size: 13px;
+}
+
+.already-exist {
+    top: 20px;
+    width: 546px;
+    height: 92px;
+    padding: 24px;
+    display: flex;
+    right: -546px;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 8px;
+    align-items: center;
+    background-color: #fff;
+}
+
+.already-exist-title {
+    opacity: 60%;
+    font-size: 18px;
+    color: #54595E;
+    font-weight: 500;
+}
+
+.check-icon {
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    margin-right: 15px;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+}
+
+.animation{
+    animation: slideToLeft 2s ease forwards;
+}
+.already-exist.hidden {
+    display: none;
+}
+
+@keyframes slideToLeft {
+    from {
+        right: -350px;
+    }
+    to {
+        right: 20px;
+    }
+}
