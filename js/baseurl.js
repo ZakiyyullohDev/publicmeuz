@@ -1,3 +1,3 @@
-const baseUrl = 'http://192.168.11.145:7000'
+const baseUrl = 'https://api.publicme.uz'
 
 export default baseUrl
