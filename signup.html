@@ -3,59 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign Up | Zakiy</title>
     <link rel="stylesheet" href="css/sign-up.css">
+    <link rel="icon" href="img/Shape.png">
 </head>
 <body>
-    
+
     <div class="container">
         <div class="container-top">
-            <!-- <h1 class="container-title"> -->
-                <a href="signin.html" class="sign-in-link links">Sign In</a>
-            <!-- </h1> -->
-            <!-- <h1 class="container-title"> -->
-                <a href="signup.html" class="sign-up-link links">Sign Up</a>
-            <!-- </h1> -->
+            <h1 class="container-title">Create an Account</h1>
+            <p class="container-second-title">Create a account to continue</p>
         </div>
-        
-        <div class="container-main">
-            <div class="container-left">
-                <label for="firstNameInput" class="inputs-label">First Name*</label>
-                <input type="text" class="inputs first-name-input" id="firstNameInput">
-                <p class="error-text" id="nameErrorText">error text</p>
-                
-                <label for="lastNameInput" class="inputs-label">Last Name*</label>
-                <input type="text" class="inputs last-name-input" id="lastNameInput">
-                <p class="error-text" id="lastNameErrorText">error text</p>
-                
-                <label for="emailInput" class="inputs-label">Email*</label>
-                <input type="email" class="inputs email-input" id="emailInput">
-                <p class="error-text" id="emailErrorText">error text</p>
-                
-                <label for="passwordInput" class="inputs-label">Password*</label>
-                <input type="password" class="inputs password-input" id="passwordInput">
-                <p class="error-text" id="passwordErrorText">error text</p>
-                
+        <div class="inputs-wrapper">
+            <label for="firstNameInput" class="labels">First Name:</label>
+            <input type="text" class="input first-name-input" id="firstNameInput" placeholder="First Name">
+            <p class="error-text" id="nameErrorText">error text</p>
+
+            <label for="lastNameInput" class="labels">Last Name:</label>
+            <input type="text" class="input last-name-input" id="lastNameInput" placeholder="Last Name">
+            <p class="error-text" id="lastNameErrorText">error text</p>
+
+            <label for="emailInput" class="labels">Email Address:</label>
+            <input type="email" class="input email-input" id="emailInput" placeholder="esteban-schiller@gmail.com">
+            <p class="error-text" id="emailErrorText">error text</p>
+            <div class="forgot-password-wrapper">
+                <label for="passwordInput" class="labels password-label">Passwrod</label>
+                <a href="#" class="forgot-password-link">Forgot Password?</a>
+            </div>
+            <input type="password" class="password-input input" id="passwordInput" placeholder="• • • • • •">
+            <p class="error-text" id="passwordErrorText">error text</p>
+            <div class="sign-up-btn-wrapper">
                 <button class="sign-up-btn" id="signUpBtn">Sign Up</button>
-            </div>
-            <div class="container-right">
-                <img src="img/illustration.png" alt="right-container-img" width="200">
+                <p class="have-an-account">Already Have An Account <a href="signin.html" class="login-link">Login</a></p>
             </div>
         </div>
-        
     </div>
-    
-    
+
     <div class="already-exist" id="alreadyExist">
-        <img class="check-icon" id="alreadyExistIcon" src="img/check-one.png" alt="check-one-icon" width="28" height="28">
+        <img class="check-icon" id="alreadyExistIcon" src="img/check.png" alt="check-one-icon" width="41" height="41">
         <h2 class="already-exist-title" id="alreadyExistTitle">Email Already Exist!</h2>
     </div>
-    
+
     <script src="js/signup-test.js" type="module"></script>
-    <script>
-        document.getElementById('alreadyExist').addEventListener('click', function() {
-            this.classList.add('hidden');
-        });
-    </script>
 </body>
 </html>

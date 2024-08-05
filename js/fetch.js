@@ -20,7 +20,7 @@ const fetchFunc = async (data, alreadyExist, alreadyExistTitle, alreadyExistIcon
             // add class
 
             // change error icon
-            alreadyExistIcon.src = "img/check-one.png" 
+            alreadyExistIcon.src = "img/check.png" 
             // change error icon 
             
             alreadyExist.classList.remove("hidden")
@@ -56,7 +56,7 @@ const fetchFunc = async (data, alreadyExist, alreadyExistTitle, alreadyExistIcon
             // add class
 
             // change error icon
-            alreadyExistIcon.src = "img/un-check.png" 
+            alreadyExistIcon.src = "img/un-check-1.png" 
             // change error icon 
             
             alreadyExist.classList.remove("hidden")
@@ -75,7 +75,7 @@ const fetchFunc = async (data, alreadyExist, alreadyExistTitle, alreadyExistIcon
         alreadyExist.classList.add("already-error")
 
         // change error icon
-        alreadyExistIcon.src = "img/un-check.png" 
+        alreadyExistIcon.src = "img/un-check-1.png" 
         // change error icon 
 
         alreadyExist.classList.remove("hidden")
