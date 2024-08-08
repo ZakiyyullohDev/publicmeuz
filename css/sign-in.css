@@ -54,6 +54,7 @@ img {
     margin-right: auto;
     border-radius: 24px;
     background-color: #fff;
+    /* box-shadow: 3px 3px 3px 10px #fff; */
 }
 
 .disabled {
@@ -238,3 +239,8 @@ img {
         right: 20px;
     }
 }
+
+
+/* publicme.exe AUTH add-authtoken */
+
+/* publicme HTTP port 80 */
