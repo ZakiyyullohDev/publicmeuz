@@ -6,6 +6,7 @@
     <title>PublicMe - The Tunneling Service</title>
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="icon" href="img/publicme-logos/png/logo-black-1-remove-and-border-radius.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
     
@@ -34,22 +35,16 @@
                 <li class="info-li">PublicMe is a free and open tool for exposing local servers to public network</li>
                 <li class="info-li">It can expose TCP protocols, such as HTTP, SSH, all major databases</li>
             </ul>
+
+            <div class="download-btn-wrapper">
+                <button class="download-btn" id="downloadBtn">
+                    <i class="ri-download-line download-icon"></i>
+                    Download <kbd class="exe">publicme.exe</kbd>
+                </button>
+            </div>
             
             <div class="ter-codes-wrapper">
                 <ul class="codes-ul">
-                    <li class="codes-li">
-                        <div class="codes-box">
-                            <h3 class="code-title info-title">
-                                How to install/update
-                            </h3>
-                            <div class="ter-code-pre">
-                                <p class="dollar">$</p><p class="ter-code-code" id="terCodeCode">
-                                    publicme HTTP port 80
-                                </p>
-                                <button class="copy-btn" id="copyBtn">Copy</button>
-                            </div>
-                        </div>
-                    </li>
                     <li class="codes-li">
                         <div class="codes-box">
                             <h3 class="code-title info-title">
@@ -59,6 +54,19 @@
                             <div class="ter-code-pre">
                                 <p class="dollar">$</p><p class="ter-code-code" id="terCodeCode">
                                     publicme.exe AUTH &lt;add-authtoken&gt;
+                                </p>
+                                <button class="copy-btn" id="copyBtn">Copy</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="codes-li">
+                        <div class="codes-box">
+                            <h3 class="code-title info-title">
+                                How to install/update
+                            </h3>
+                            <div class="ter-code-pre">
+                                <p class="dollar">$</p><p class="ter-code-code" id="terCodeCode">
+                                    publicme HTTP port 80
                                 </p>
                                 <button class="copy-btn" id="copyBtn">Copy</button>
                             </div>
@@ -143,6 +151,7 @@
     <script>
         const terCodeCode = document.querySelectorAll('terCodeCode');
         const copyBtns = document.querySelectorAll('#copyBtn');
+        const downloadBtn = document.getElementById('downloadBtn');
         
         copyBtns.forEach(copyBtn => {
             copyBtn.addEventListener('click', (e)=> {
@@ -166,6 +175,13 @@
         }
 
         getStars();
+
+        downloadBtn.addEventListener("click", (e)=> {
+            const link = document.createElement('a');
+            link.href = 'test.txt';
+            link.download = 'ReadMe.txt';
+            link.click();
+        })
     </script>
 </body>
 </html>
