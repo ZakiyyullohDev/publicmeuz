@@ -73,6 +73,24 @@ function signUpValidation(firstNameInput, lastNameInput, emailInput, passwordInp
     return 200
 }
 
+function handleUIFeedback(statusInfo, iconSrc, message) {
+    alreadyExist.classList.remove("already-error", "already-success");
+    alreadyExist.classList.add(statusInfo ? "already-success" : "already-error");
+    
+    alreadyExistIcon.src = '';
+    alreadyExistIcon.src = iconSrc;
+    
+    alreadyExist.classList.remove("hidden");
+    alreadyExist.classList.add("animation");
+    alreadyExistTitle.textContent = '';
+    alreadyExistTitle.textContent = message;
+    
+    setTimeout(() => {
+        alreadyExist.classList.add("hidden");
+    }, 3000);
+}
+
 export default {
-    signUpValidation
+    signUpValidation,
+    handleUIFeedback
 }

@@ -1,7 +1,7 @@
 import baseUrl from "./baseurl.js"
 
 const userTokenSetStorage = (userToken) => {
-    localStorage.setItem("user_token", JSON.stringify(userToken))
+    localStorage.setItem("user_token", userToken)
 }
 
 const fetchFunc = async (data, alreadyExist, alreadyExistTitle, alreadyExistIcon) => {
@@ -16,7 +16,6 @@ const fetchFunc = async (data, alreadyExist, alreadyExistTitle, alreadyExistIcon
         })
         
         const responseData = await response.json()
-        console.log(responseData);
         
         if (response.status === 200) {
             // add class
@@ -47,7 +46,7 @@ const fetchFunc = async (data, alreadyExist, alreadyExistTitle, alreadyExistIcon
             
             // go to login.html
             setTimeout(() => {
-                window.location.href = 'dashboard.html'
+                window.location.href = 'dashboard-second.html'
             }, 1500);
             // go to login.html
             
@@ -61,7 +60,7 @@ const fetchFunc = async (data, alreadyExist, alreadyExistTitle, alreadyExistIcon
             // add class
             
             // change error icon
-            alreadyExistIcon.src = "img/un-check-1.png" 
+            alreadyExistIcon.src = "img/un-check.png" 
             // change error icon 
             
             alreadyExist.classList.remove("hidden")
@@ -80,7 +79,7 @@ const fetchFunc = async (data, alreadyExist, alreadyExistTitle, alreadyExistIcon
             // add class
             
             // change error icon
-            alreadyExistIcon.src = "img/un-check-1.png" 
+            alreadyExistIcon.src = "img/un-check.png" 
             // change error icon 
             
             alreadyExist.classList.remove("hidden")
@@ -100,7 +99,7 @@ const fetchFunc = async (data, alreadyExist, alreadyExistTitle, alreadyExistIcon
         alreadyExist.classList.add("already-error")
         
         // change error icon
-        alreadyExistIcon.src = "img/un-check-1.png" 
+        alreadyExistIcon.src = "img/un-check.png" 
         // change error icon 
         
         alreadyExist.classList.remove("hidden")
