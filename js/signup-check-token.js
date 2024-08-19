@@ -19,7 +19,8 @@ try {
     }
 
     if (response.status === 401) {
-        utils.handleUIFeedback(false, 'img/un-check.png', 'Unexpected error')
+        // utils.handleUIFeedback(false, 'img/un-check.png', 'Unexpected error')
+        return false;
     }
     
     
