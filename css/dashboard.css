@@ -230,7 +230,6 @@ img {
     transition: all 0.2s linear;
     background-color: #24292f;
     justify-content: space-between;
-    /* cursor: url('/img/publicme-logos/png/logo-black-1-remove-and-border-radius-cursor.png'), auto; */
 }
 
 .download-btn:hover {

@@ -47,14 +47,12 @@ img {
 
 .container {
     width: 630px;
-    /* height: 825px; */
     padding: 57px;
     margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 24px;
     background-color: #fff;
-    /* box-shadow: 3px 3px 3px 10px #fff; */
 }
 
 .disabled {
@@ -190,7 +188,6 @@ img {
 
 .error-text {
     opacity: 0;
-    /* width: 297px; */
     color: #FF3D00;
     margin-bottom: 10px;
 }
@@ -239,8 +236,3 @@ img {
         right: 20px;
     }
 }
-
-
-/* publicme.exe AUTH add-authtoken */
-
-/* publicme HTTP port 80 */

@@ -32,7 +32,6 @@ body {
     font-size: 16px;
     color: #4A4543;
     line-height: 1.5;
-    /* background-color: #fff; */
     font-family: "Roboto", "Arial", sans-serif;
 }
 
@@ -316,7 +315,6 @@ img {
 }
 
 .pc-info-ul {
-    /* width: 1200px; */
     display: flex;
     margin-top: 20px;
     flex-wrap: wrap;
@@ -357,14 +355,12 @@ img {
 
 .success {
     border: 1px solid greenyellow;
-    /* box-shadow: 3px 4px 29px 3px rgba(0, 255, 8, 0.71);
-    -webkit-box-shadow: 3px 4px 29px 3px rgba(0, 255, 8, 0.71); -moz-box-shadow: 3px 4px 29px 3px rgba(0, 255, 8, 0.71); */
+
 }
 
 .error {
     border: 1px solid tomato;
-    /* box-shadow: 3px 4px 29px 3px rgba(255, 0, 0, 0.71);
-    -webkit-box-shadow: 3px 4px 29px 3px rgba(255, 0, 0, 0.71); -moz-box-shadow: 3px 4px 29px 3px rgba(255, 0, 0, 0.71); */
+
 }
 
 .already-exist {
@@ -405,14 +401,8 @@ img {
     justify-content: space-between;
 }
 
-/* .error-icon {
-    color: tomato;
-    font-size: 44px;
-    margin-right: 40px;
-} */
 
 .already-exist-title {
-    /* color: tomato; */
     font-size: 22px;
     text-align: center;
 }
