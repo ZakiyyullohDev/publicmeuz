@@ -164,18 +164,19 @@ img {
 }
 
 .ter-code-pre {
-    color: #ccc;
-    display: flex;
     width: 800px;
     height: 80px;
-    align-items: center;
-    position: relative;
-    padding: 1.75rem 0 1.75rem 1rem;
-    overflow: auto;
+    display: flex;
+    color: #ccc;
     margin: 5px 0;
-    font-family: consola, monospace;
-    background: #2D2D2D;
+    overflow: auto;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
     border-radius: 10px;
+    background: #2D2D2D;
+    font-family: consola, monospace;
+    padding: 1.75rem 0 1.75rem 1rem;
 }
 
 .ter-code-code {
@@ -230,6 +231,7 @@ img {
     transition: all 0.2s linear;
     background-color: #24292f;
     justify-content: space-between;
+    /* cursor: url('/img/publicme-logos/png/logo-black-1-remove-and-border-radius-cursor.png'), auto; */
 }
 
 .download-btn:hover {
@@ -294,6 +296,27 @@ img {
     }
 }
 
-::-webkit-scrollbar-thumb {
-    width: 100px;
+.log-out-btn {
+    right: 10px;
+    bottom: 10px;
+    color: #ccc;
+    cursor: pointer;
+    position: fixed;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 7px 10px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    border: 1px solid #7b7b7c;
+    transition: all 0.3s ease;
+    background-color: #3D3D3D;
+    box-shadow: 0px 0px 5px 0px #7b7b7c;
+}
+
+.log-out-btn:hover {
+    opacity: 70%;
+}
+
+.log-out-btn:active {
+    opacity: 50%;
 }
